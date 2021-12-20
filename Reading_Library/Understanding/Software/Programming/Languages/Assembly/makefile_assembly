@@ -1,0 +1,7 @@
+install:
+	nasm -f elf64 -o hello_world.o hello_world.s
+	ld   -o hello_world hello_world.o
+objdump:
+	objdump -D hello_world
+clean:
+	rm hello_world_c hello_world hello_world.o

@@ -1,0 +1,55 @@
+
+Up & Going
+- [Chapter 1: Into Programming](<../up & going/ch1.md>)
+	- Code
+		- Statements
+		- Expressions
+		- Executing a Program: Scopes & Closures ([Ch1](<../scope & closures/ch1.md>) & [Ch2](<../scope & closures/ch2.md>))
+	- Try it Yourself
+		- Output
+		- Input
+	- Operators: Values & Types ([Ch2](<../up & going/ch2.md>))
+	- Values & Types
+		- Converting Between Types: ([Ch2](<../up & going/ch2.md>) & [Ch4](<../types & grammar/ch4.md>))
+	- Code Comments
+	- Variables: [Types & Grammar](<../types & grammar/README.md>)
+	- Blocks
+	- Conditionals: Coercions ([Ch4](<../types & grammar/ch4.md>))
+	- Loops
+	- Functions
+		- Scope: Scope & Closures ([Ch1](<../scope & closures/ch1.md>), [Ch2](<../scope & closures/ch2.md>), [Ch3](<../scope & closures/ch3.md>))
+- [Chapter 2: Into JavaScript](<../up & going/ch2.md>)
+	- Values & Types: Types & Grammar ([ch1](<../types & grammar/ch1.md>) & [ch2](<../types & grammar/ch2.md>))
+		- Objects: [this & Object Prototypes](<../this & object prototypes/README.md>) ([ch3](<../this & object prototypes/ch3.md>))
+			- Arrays
+			- Functions
+		- Built-In Type Methods: JS natives & Boxing ([ch3](<../types & grammar/ch3.md>) of Types & Grammar), Prototype ([ch5](<../this & object prototypes/ch5.md>) of this & Object Prototypes)
+		- Comparing Values
+			- Coercion
+			- Truthy & Falsy
+			- Equality:  of Types & Grammar
+			- Inequality: [Ch4](<../types & grammar/ch4.md>) of Types & Grammar
+	- Variables: Reserved words ([Appendix A](<../types & grammar/apA.md>) of Types & Grammar)
+		- Function Scopes
+			- Hoisting
+			- Nested Scopes: [Scope & Closures](<../scope & closures/README.md>) & [ES6 & Beyond](<../es6 & beyond/README.md>)
+	- Conditionals: [Types & Grammar](<../types & grammar/README.md>)
+	- Strict Mode: [Types & Grammar](<../types & grammar/ch5.md>)
+	- Functions As Values: [Scope & Closures](<../scope & closures/README.md>)
+		- Immediately Invoked Function Expressions (IIFEs)
+		- Closure
+			- Modules: [Scope & Closures](<../scope & closures/README.md>)
+	- `This` Identifier: [Ch1](<../this & object prototypes/ch1.md>) & [Ch2](<../this & object prototypes/ch2.md>) of This & Object Prototypes
+	- Prototypes: [Ch4](<../this & object prototypes/ch4.md>), [Ch5](<../this & object prototypes/ch5.md>), [Ch6](<../this & object prototypes/ch6.md>) of This & Object Prototypes
+	- Old & New
+		- Polyfilling
+		- Transpiling
+	- Non-JavaScript
+	- Review
+- [Chapter 3: Into YDKJS](<../up & going/ch3.md>)
+	- Scope & Closures
+	- this & Object Prototypes
+	- types & Grammar
+	- Async & Performance
+	- ES6 & Beyond
+	- Review

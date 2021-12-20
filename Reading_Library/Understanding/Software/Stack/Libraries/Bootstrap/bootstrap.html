@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col border border-danger text-center mb-4">
+          Top Row (Centered) bottom margin
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border border-danger">Row 2 Col 1</div>
+        <div class="col border border-success">Col 2</div>
+      </div>
+      <div class="row mt-2 mb-4">
+        <div class="col border border-danger">Col 3: Row top margin</div>
+        <div class="col border border-warning">
+          <div class="row">
+            <div class="col border border-success">Col 4</div>
+          </div>
+          <div class="row">
+            <div class="col border border-primary">Col 5</div>
+            <div class="col border border-danger">Col 6</div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2 mb-4">
+        <div class="col border border-danger">
+          <p>This a paragraph</p>
+        </div>
+        <div class="col border border-warning">
+          <div class="row h-25">
+            <div class="col border border-success">
+              <!-- <p>This is more informaton</p> -->
+            </div>
+          </div>
+          <div class="row h-50">
+            <!-- 25% row height of col -->
+            <div class="col border border-primary small"></div>
+            <div class="col border border-danger"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2 mb-4">
+        <div
+          class="col border border-danger overflow-auto"
+          style="height: 70px"
+        >
+          <p>
+            This a paragraph that should overflow. You have to set the height of
+            the element that is set to overflow
+          </p>
+        </div>
+        <div class="col border border-warning">
+          <div class="row h-25">
+            <div class="col border border-success">
+              <!-- <p>This is more informaton</p> -->
+            </div>
+          </div>
+          <div class="row h-50">
+            <!-- 25% row height of col -->
+            <div class="col border border-primary small">^25% small text</div>
+            <div class="col border border-danger">50%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="height: 20px">
+        <div class="col border border-warning">
+          <p class="text-center">This is a text centered message</p>
+        </div>
+      </div>
+
+      <div class="row mt-4 mb-4" style="height: 200px">
+        <div class="col border border-dark d-flex align-items-center">
+          <p>This is a item centered message</p>
+        </div>
+        <div
+          class="col border border-dark d-flex align-items-center justify-content-center"
+        >
+          <p>This is item centered and justified centered message</p>
+        </div>
+      </div>
+
+      <div class="row mb-4 mt-4">
+        <div
+          class="col border border-danger overflow-auto"
+          style="height: 75px"
+        >
+          <p class="border border-primary">First element: Overflow</p>
+          <p class="border border-warning">Second element</p>
+          <p class="border border-success">Third element</p>
+          <div class="col">
+            <div class="row mb-4">
+              <div class="col border border-danger">Col 1</div>
+              <div class="col border border-success">
+                <div class="row h-25">
+                  <div class="col border border-primary"></div>
+                </div>
+                <div class="row h-50">
+                  <div class="col border border-danger"></div>
+                  <div class="col border border-success"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-2"></div>
+        <div class="col-2"><--Blank Columns work.</div>
+        <div class="col-4 border border-danger">blank rows don't</div>
+        <div class="col-2 border border-success">Green Box</div>
+      </div>
+
+      <div class="row">
+        <div class="col border border-danger" style="height: 75px">
+          <p class="border border-primary">First element: No overflow</p>
+          <p class="border border-warning">Second element</p>
+          <p class="border border-success">Third element</p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="card">Hello</div>
+      </div>
+    </div>
+    <div class="row"></div>
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-success"
+        role="progressbar"
+        aria-valuenow="40"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 40%"
+      >
+        40% Complete (success)
+      </div>
+    </div>
+    <br />
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-info"
+        role="progressbar"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 50%"
+      >
+        50% Complete (info)
+      </div>
+    </div>
+    <br />
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-warning"
+        role="progressbar"
+        aria-valuenow="60"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 60%"
+      >
+        60% Complete (warning)
+      </div>
+    </div>
+    <br />
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-danger"
+        role="progressbar"
+        aria-valuenow="70"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 70%"
+      >
+        70% Complete (danger)
+      </div>
+    </div>
+    <br />
+    <br />
+  </body>
+</html>

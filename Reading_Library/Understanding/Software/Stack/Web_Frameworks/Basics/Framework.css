@@ -1,0 +1,119 @@
+
+/* Zero out all margins & Padding */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* .container{
+
+} */
+
+.navbar{
+  border: 10px solid purple;
+}
+
+.top-nav{
+  border: 5px solid red;
+  width: 100%;
+  /* Flex Nav locations */
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left,.nav-center,.nav-right{
+  display: inline-block;
+  border-width: 1px;
+  border-style: dashed;
+  text-align: center;
+  font-size: 44px;
+  width: 33%;
+}
+
+.nav-left{
+  border-color: blue;
+}
+
+.nav-center{
+border-color: greenyellow;
+
+}
+
+.nav-right{
+ border-color: orange;
+}
+
+
+.header{
+  border: 1px solid green;
+  width: 100vw;
+  height: 100px;
+}
+
+
+
+.navmenu{
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid pink;
+  width: 200px;
+  height: 400px;
+}
+
+.content{
+  display: inline-block;
+  border: 1px solid blue;
+  width: 700px;
+  height: 700px;
+}
+
+.relative-units{
+  font-size: 20px;
+}
+
+
+/* Relative to Root/Parent Element */
+.size-em{
+  font-size: 2em;
+}
+
+.size-ex{
+  font-size: 2ex;
+}
+
+.size-ch{
+  font-size: 1ch;
+}
+
+.size-rem{
+  font-size: 2rem;
+}
+
+.size-lh{
+  /* font-size: 1lh; */
+  text-decoration: line-through;
+}
+
+/* Relative to Viewport */
+.size-vw{
+  font-size: 2vw;
+}
+
+.size-vh{
+  font-size: 2vh;
+}
+
+.size-vmin{
+  font-size: 2vmin;
+}
+
+.size-vmax{
+  font-size: 2vmax;
+}
+
+
+.footer{
+  border: 1px solid green;
+  width: 100vw;
+  height: 100px;
+}
