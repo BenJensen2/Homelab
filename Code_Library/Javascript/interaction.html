@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interaction</title>
+    <link rel="stylesheet" href="interaction.css" />
+    <script src="interaction.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <button id="print">Print</button>
+      <button id="mybtn">Button</button>
+      <input type="text" id="focus" />
+      <p id="comment">
+        <!-- This is my comment -->
+      </p>
+      <input type="text" id="change">
+      <button id="context-menu">Context Menu</button>
+
+      <!-- Click Elements -->
+      <h5>Mouse Events</h5>
+      <button id="click">Click</button>
+      <div id="mouseEvent">Mouse <span id="mouseDown">Down</span> & <span id="mouseUp">Up</span></div>
+
+
+      <!-- Drag Elements -->
+      <h5>Drag Events</h5>
+      <div class="dropzone">
+        <div id="drag-element" draggable="true">Draggable Item</div>
+      </div>
+      <div class="drag-enter-leave">Drop Enter/Exit</div>
+      <div class="dragover">Dragover</div>
+      <div class="dragdrop">Drag Drop</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* Drag Event */
+#draggable {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  background: white;
+}
+
+.dropzone, .drag-enter-leave, .dragover, .dragdrop, #mouseEvent {
+  width: 200px;
+  height: 20px;
+  border: solid 1px blue;
+  margin-bottom: 10px;
+  padding: 10px;
+}

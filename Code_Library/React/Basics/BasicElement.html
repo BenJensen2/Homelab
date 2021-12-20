@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="embedElement"></div>
+    <div id="embedElement2"></div>
+    <div id="jsxExpression"></div>
+    <div id="like_button_container"></div>
+    <div id="ticker"></div>
+    <div id="componentRender"></div>
+    <div id="composingComponents"></div>
+    <div id="newTicker"></div>
+    <div id="functionalTicker"></div>
+    <div id="statefulTicker"></div>
+    <div id="lifestyleTicker"></div>
+    <script type="text/babel">
+      // Embedding an expression
+      const name = "Josh Perez";
+      const embedElement = <h1>Hello, {name}</h1>;
+      ReactDOM.render(embedElement, document.getElementById("embedElement"));
+
+      function formatName(user) {
+        return user.firstName + " " + user.lastName;
+      }
+
+      const user = {
+        firstName: "Harper",
+        lastName: "Perez",
+      };
+
+      const embedElement2 = <h1>Hello, {formatName(user)}!</h1>;
+      ReactDOM.render(embedElement2, document.getElementById("embedElement2"));
+
+      // JSX Expression
+      function getGreeting(user) {
+        if (user) {
+          return <h1>Hello, {formatName(user)}!</h1>;
+        }
+        return <h1>Hello, Stranger.</h1>;
+      }
+
+      const jsxExpression = getGreeting(user);
+
+      ReactDOM.render(jsxExpression, document.getElementById("jsxExpression"));
+
+      // Updating the rendered element
+      function tick() {
+        const tickElement = (
+          <div>
+            Tick Element
+            <h1>Hello, world!</h1>
+            <h2>It is {new Date().toLocaleTimeString()}.</h2>
+          </div>
+        );
+        ReactDOM.render(tickElement, document.getElementById("ticker"));
+      }
+
+      // Rendering a component
+      function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+      }
+
+      const renderComponentElement = <Welcome name="Sara" />;
+      ReactDOM.render(
+        renderComponentElement,
+        document.getElementById("componentRender")
+      );
+
+      // Composing Components
+      function App() {
+        return (
+          <div>
+            Composing Components
+            <Welcome name="Sara" />
+            <Welcome name="Cahal" />
+            <Welcome name="Edite" />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("composingComponents"));
+      // State & Lifecycle
+      function Clock(props) {
+        return (
+          <div>
+            <h1>Hello, world!</h1>
+            <p>This is the new ticker!!!</p>
+            <h2>It is {props.date.toLocaleTimeString()}.</h2>
+          </div>
+        );
+      }
+
+      function newTick() {
+        ReactDOM.render(
+          <Clock date={new Date()} />,
+          document.getElementById("newTicker")
+        );
+      }
+
+      setInterval(newTick, 1000);
+
+      // Converting a Function to a Class: Not Working
+      // Clock now defined as a class rather than a function
+      class functionalClock extends React.Component {
+        render() {
+          return (
+            <div>
+              <h1>Functional Clock</h1>
+              <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
+            </div>
+          );
+        }
+      }
+
+      // Not working
+      // function functionalTick() {
+      //   ReactDOM.render(
+      //     <functionalClock date={new Date()} />,
+      //     document.getElementById("functionalTicker")
+      //   );
+      // }
+
+      // setInterval(functionalTick, 1000); Not Working
+
+      // Stateful Clock
+      class StatefulClock extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { date: new Date() };
+        }
+
+        render() {
+          return (
+            <div>
+              <h1>Stateful Clock!</h1>
+              <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <StatefulClock />,
+        document.getElementById("statefulTicker")
+      );
+
+      // Adding Lifecycle
+      class LifecycleClock extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { date: new Date() };
+        }
+
+        componentDidMount() {
+          this.timerID = setInterval(() => this.tick(), 1000);
+        }
+
+        componentWillUnmount() {}
+
+        render() {
+          return (
+            <div>
+              <h1>Lifecycle Clock!</h1>
+              <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <LifestyleClock />,
+        document.getElementById("lifestyleTicker")
+      );
+    </script>
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this section for a production-ready setup with JSX:
+      https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+      In a larger project, you can use an integrated toolchain that includes JSX instead:
+      https://reactjs.org/docs/create-a-new-react-app.html
+
+      You can also use React without JSX, in which case you can remove Babel:
+      https://reactjs.org/docs/react-without-jsx.html
+    -->
+  </body>
+</html>

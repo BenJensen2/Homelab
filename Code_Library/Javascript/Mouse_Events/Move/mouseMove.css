@@ -1,0 +1,21 @@
+#cursor1 {
+  background-color: red;
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  left: 200px;
+}
+
+#cursor2 {
+  background-color: blue;
+  width: 10px;
+  height: 1px;
+  position: absolute;
+}
+
+#cursor3 {
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
