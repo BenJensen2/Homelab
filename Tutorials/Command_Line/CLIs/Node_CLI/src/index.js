@@ -1,0 +1,2 @@
+require = require('esm')(module); // ECMAScript (Javascript Standards) module loader
+require('../src/cli').cli(process.argv); //Returns an array containing the command-line arguments passed when the Node.js process was launched.

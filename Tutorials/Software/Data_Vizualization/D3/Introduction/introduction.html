@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="introduction.js"></script> -->
+  </head>
+  <body>
+    <div>Hello World</div>
+    <div>Welcome to Educative</div>
+    <div>Introduction to D3.js</div>
+    <script>
+      // write your d3 code here..
+      var s = d3.select("div").text();
+      console.log(s);
+      d3.selectAll('div').style("color","green");
+      d3.select('div').text("I am adding text");
+      d3.select("body").append("div").text("Appending new div tag")
+      console.log("Waiting")
+      setTimeout(function(){
+        d3.select("div").remove(),
+        console.log("Done Waiting")
+        d3.select("div").style("color","blue").style("font-size","30px")
+      },1000)
+    </script>
+  </body>
+</html>

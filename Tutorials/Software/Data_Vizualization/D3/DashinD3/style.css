@@ -1,0 +1,11 @@
+.div-event {
+  height: 100px;
+  width: 100px;
+  background-color: steelblue;
+  margin:5px;
+}
+
+.small{
+  font: italic 13px sans-serif;
+  color: black;
+}
