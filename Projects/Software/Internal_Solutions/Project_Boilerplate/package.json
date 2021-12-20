@@ -1,0 +1,25 @@
+{
+  "name": "@benjensen2/boil",
+  "version": "1.0.0",
+  "description": "CLI for creating boilerplate applications",
+  "main": "src/index.js",
+  "bin": {
+    "@benjensen2/boil": "bin/boil",
+    "boil": "bin/boil"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "boil"
+  ],
+  "author": "Ben Jensen",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@benjensen2/bible-cli",
+  "version": "1.0.0",
+  "description": "Cli for accessing bible verses",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "@benjensen2/bible-cli": "bin/bible-cli",
+    "bible-cli": "bin/bible-cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli",
+    "bible-cli"
+  ],
+  "author": "Ben Jensen",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}

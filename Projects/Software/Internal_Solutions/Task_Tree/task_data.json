@@ -1,0 +1,32 @@
+{
+  "name": "tasks",
+  "children": [
+    {
+      "name": "Van",
+      "children": [
+        {
+          "name": "Insurance",
+          "children": [
+            {"name": "Geico"},
+            {"name": "State Farm"},
+            {"name": "Hometown"}
+          ]
+        },
+        {"name": "Electrical"}
+      ]
+    },
+    {"name": "Trailer",
+    "children": [
+      {
+        "name": "Solar",
+        "children": [
+          {"name": "Panels"},
+          {"name": "Batteries"},
+          {"name": "Inverter"},
+          {"name": "Charge Controller"}
+        ]
+      },
+      {"name": "Shore Power"}
+    ]}
+  ]
+}

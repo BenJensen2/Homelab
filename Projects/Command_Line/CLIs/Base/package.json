@@ -1,0 +1,25 @@
+{
+  "name": "@benjensen2/base_cli",
+  "version": "1.0.0",
+  "description": "Most Basic version of a cli with npm link",
+  "main": "src/index.js",
+  "bin": {
+    "@benjensen2/base_cli": "bin/base_cli",
+    "base_cli": "bin/base_cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "base_cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}

@@ -1,0 +1,6 @@
+*.o
+Makefile.in
+debug
+calc
+lex
+liblibshared.a

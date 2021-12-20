@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+// Bash script that runs in Node environment
+require = require('esm')(module /*, options*/); // ECMAScript (JS Standard) module loader
+require('../src/cli').cli(process.argv); //process the command line arguements in cli.js
