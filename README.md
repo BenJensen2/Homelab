@@ -3,9 +3,20 @@ This is my home lab, where I learn, understand, test and develop everything rela
 
 ## Folder Structure
 
+[Code Library](./Code_Library/Code_Library.md): Basic files and execution of technologies
+
 [Daily](./Daily/Daily.md): Daily Coding Practice.  For God has not given us a spirit of fear but of power, love, and self-control - [2 Timothy 1:7](https://my.bible.com/bible/59/2TI.1.7)
 
-[Reading Library](./Reading_Library/Reading_Library.md): Collection of all reference material
+[Production](./Production/Production.md): Production Homelab
+
+[Projects](./Projects/Projects.md): Whatever you do, work heartily, as for the Lord and not for men <br> - [Colossians 3:23](https://my.bible.com/bible/59/COL.3.23)
+- All Projects must have README
+- Projects List
+  - [Bash Scripting](./Projects/Bash_Scripting/Bash_Scripting.md): All Projects to understand & use Bash Scripting more effectively
+  - [Command Line](./Projects/Command_Line/Command_Line.md): Command Line interfaces
+  - [Software](./Projects/Software/Software.md): 
+
+[Reading Library](./Reading_Library/Reading_Library.md): Collection of all reference material, courses, books & understandings
 
 - [Career](./Reading_Library/Career/Career.md): Career Documents
 
@@ -31,14 +42,5 @@ This is my home lab, where I learn, understand, test and develop everything rela
 <br><br>
 - [Vision](./Reading_Library/Vision/Vision.md): Where there is no **vision**, the people perish: But he that keepeth the law, happy is he. - [Proverbs 29:18](https://my.bible.com/bible/59/PRO.29.18.ESV)
   - [Command Line](./Reading_Library/Vision/Command_Line/Command_Line.md): Command line information and utilities
-
-[Production](./Production/Production.md): Production Homelab
-
-[Projects](./Projects/Projects.md): Whatever you do, work heartily, as for the Lord and not for men <br> - [Colossians 3:23](https://my.bible.com/bible/59/COL.3.23)
-- All Projects must have README
-- Projects List
-  - [Bash Scripting](./Projects/Bash_Scripting/Bash_Scripting.md): All Projects to understand & use Bash Scripting more effectively
-  - [Command Line](./Projects/Command_Line/Command_Line.md): Command Line interfaces
-  - [Software](./Projects/Software/Software.md): 
 
 [Tutorials](./Tutorials/Tutorials.md): Learning Tutorials (Outside of courses)
