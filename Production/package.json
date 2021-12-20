@@ -1,0 +1,30 @@
+{
+  "name": "homelab",
+  "version": "1.0.0",
+  "description": "Production HomeLab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js & npm run scss",
+    "scss": "sass --watch static/calendar.scss static/calendar.css"
+  },
+  "keywords": [
+    "Portfolio",
+    "Best",
+    "Practices",
+    "Homelab"
+  ],
+  "author": "Ben Jensen",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "react-router-dom": "^6.0.2",
+    "sass": "^1.43.4"
+  }
+}

@@ -1,0 +1,21 @@
+/* Universals */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a{
+  color: black;
+}
+
+li{
+  list-style-type: none;
+}

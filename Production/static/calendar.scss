@@ -1,0 +1,85 @@
+@import "main.css";
+
+//SASS Standards
+// Fonts
+$font-arial: Arial, Helvetica, sans-serif;
+
+// - Grid
+$grid-column-number: 7;
+$grid-column-fraction: 1fr;
+$grid-columns: repeat($grid-column-number, $grid-column-fraction);
+$grid-row-number: 6;
+$grid-row-fraction: 1fr;
+$grid-rows: repeat($grid-row-number, $grid-row-fraction);
+
+// - Borders
+$border-color: rgb(131, 131, 131);
+$border-style: solid;
+$border-width: 1px;
+
+// - Dimensions
+$viewwidth: 100vw;
+$viewheight: 100vh;
+$percent100: 100%;
+$day-min-width: 180px;
+$day-min-height: 190px;
+$calendar-min-width: $day-min-width * $grid-column-number;
+$calendar-min-height: $day-min-height * $grid-row-number;
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+
+@include for-phone-only {
+  main{
+    display: none;
+  }
+}
+
+@include for-tablet-portrait-up{
+  aside{
+    display: none;
+  }
+}
+
+@include for-tablet-landscape-up{
+  aside{
+    display: none;
+  }
+}
+
+@include for-desktop-up{
+  
+}
+
+#page{
+  display: flex;
+  align-items: stretch;
+  width: $viewwidth;
+  height: $viewheight;
+}
+
+aside, main{
+  border: green solid 1px;
+}
+
+aside{
+  flex-grow: 1;
+}
+
+main{
+  flex-grow: 4;
+}
