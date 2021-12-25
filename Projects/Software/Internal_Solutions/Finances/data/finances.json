@@ -1,0 +1,289 @@
+{
+  "Finances": {
+    "history": {
+      "gifts": {}
+    },
+    "budget": {
+      "income": {
+        "total": 0,
+        "categories": [
+          {
+            "title": "VA",
+            "amount": 3624.66,
+            "occurance": "monthly"
+          }
+        ]
+      },
+      "expenses": {
+        "categories": [
+          {
+            "title": "Giving",
+            "total": 0,
+            "children": [
+              {
+                "title": "Tithe",
+                "amount": 363,
+                "occurance": "monthly"
+              },
+              {
+                "title": "Tips",
+                "amount": 0,
+                "occurance": "monthly"
+              }
+            ]
+          },
+          {
+            "title": "Housing",
+            "total": 0,
+            "children": [
+              {
+                "title": "RV Park",
+                "amount": 1041,
+                "occurance": "monthly"
+              }
+            ]
+          },
+          {
+            "title": "Food",
+            "total": 0,
+            "children": [
+              {
+                "title": "Organic & Clean Foods",
+                "amount": 735,
+                "occurance": "monthly"
+              }
+            ]
+          },
+          {
+            "title": "Utilities",
+            "total": 0,
+            "children": [
+              {
+                "title": "Storage",
+                "amount": 358.7,
+                "occurance": "monthly"
+              },
+              {
+                "title": "AT&T",
+                "amount": 143,
+                "occurance": "monthly"
+              },
+              {
+                "title": "T-Mobile",
+                "amount": 50,
+                "occurance": "monthly"
+              },
+              {
+                "title": "Apple Cloud",
+                "amount": 2.99,
+                "occurance": "monthly"
+              },
+              {
+                "title": "Subscriptions",
+                "amount": 51.26,
+                "occurance": "monthly"
+              }
+            ]
+          },
+          {
+            "title": "Transportation",
+            "total": 0,
+            "children": [
+              {
+                "title": "Gas",
+                "amount": 400,
+                "occurance": "monthly"
+              }
+            ]
+          },
+          {
+            "title": "Savings",
+            "total": 0,
+            "children": [
+              {
+                "title": "Emergency Fund",
+                "amount": 362.66,
+                "occurance": "monthly"
+              }
+            ]
+          },
+          {
+            "title": "Health",
+            "total": 0,
+            "children": [
+              {
+                "title": "Gym",
+                "amount": 0,
+                "occurance": "monthly"
+              },
+              {
+                "title": "Supplements",
+                "amount": 117.05,
+                "occurance": "monthly"
+              },
+              {
+                "title": "Dr. Kelly",
+                "amount": 0,
+                "occurance": "monthly"
+              }
+            ]
+          },
+          {
+            "title": "Lifestyle",
+            "total": 0,
+            "children": [
+              {
+                "title": "Nanny/Tutor",
+                "amount": 0,
+                "occurance": "monthly"
+              },
+              {
+                "title": "Fun Money/Amazon",
+                "amount": 0,
+                "occurance": "monthly"
+              },
+              {
+                "title": "Misc",
+                "amount": 0,
+                "occurance": "monthly"
+              },
+              {
+                "title": "Grooming",
+                "amount": 0,
+                "occurance": "monthly"
+              }
+            ]
+          },
+          {
+            "title": "Insurance",
+            "total": 0,
+            "children": [
+              {
+                "title": "Van",
+                "provider": "State Farm",
+                "amount": 0,
+                "occurance": "bi-annually"
+              }
+            ]
+          },
+          {
+            "title": "Debt",
+            "total": 0,
+            "children": [
+              {
+                "title": "Credit Card",
+                "amount": 0,
+                "occurance": "monthly"
+              }
+            ]
+          }
+        ]
+      },
+      "net": {
+        "amount": 0,
+        "income": 0
+      }
+    },
+    "forecasting": {
+      "income": {
+        "total": 0,
+        "categories": [
+          {
+            "title": "VA",
+            "amount": 3624.66,
+            "occurance": "monthly",
+            "taxable": "no"
+          },
+          {
+            "title": "Coding",
+            "amount": 0,
+            "occurance": "yearly",
+            "taxable": "yes",
+            "state-tax": "california"
+          }
+        ]
+      },
+      "expenses": {
+        "house": {
+          "initial-cost": 770700.0,
+          "total-interest": 0,
+          "total-cost": 0,
+          "initial-down": 0,
+          "initial-principal": 0,
+          "current-principal": 0,
+          "current-interest": 0,
+          "current-balance": 0,
+          "annual-interest-rate": 0.04,
+          "term-years": 30,
+          "simple-interest-rate": 0,
+          "monthly-payment": 0,
+          "monthly-rent": 1000
+        }
+      },
+      "savings":{
+        "total":0,
+        "list":[
+          {
+            "title":"Savings",
+            "instiution":"PCMCU",
+            "current-amount":0
+          },
+          {
+            "title":"Emergency Fund",
+            "instiution":"PCMCU",
+            "current-amount":0
+          }
+        ]
+      },
+      "investments": {
+        "total":0,
+        "list": [
+          {
+            "title": "Roth IRA",
+            "amount-added": 0,
+            "current-amount": 70184
+          },
+          {
+            "title": "Personal",
+            "amount-added":0,
+            "current-amount":4341
+          },
+          {
+            "title": "Stocks",
+            "amount-added": 0,
+            "current-amount": 6120
+          }
+        ]
+      }
+    },
+    "taxes": {
+      "federal": {
+        "brackets": {
+          "2021": {
+            "married-jointly": [
+              {
+                "minimum-income": 0,
+                "maximum-income": 19900,
+                "tax-rate": 0.1,
+                "max-owed": 1990
+              },
+              {
+                "minimum-income": 19901,
+                "maximum-income": 81050,
+                "tax-rate": 0.12,
+                "max-owed": 3668.88
+              },
+              {
+                "minimum-income": 40526,
+                "maximum-income": 0,
+                "tax-rate": 0.12,
+                "max-owed": 3668.88
+              }
+            ]
+          }
+        }
+      },
+      "state": {}
+    }
+  }
+}
