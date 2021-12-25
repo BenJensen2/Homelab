@@ -3,11 +3,13 @@ This is my home lab, where I learn, understand, test and develop everything rela
 
 ## Folder Structure
 
+[Bugs](./Bugs/Bugs.md): Common or tough bugs
+
 [Code Library](./Code_Library/Code_Library.md): Basic files and execution of technologies
 
 [Daily](./Daily/Daily.md): Daily Coding Practice.  For God has not given us a spirit of fear but of power, love, and self-control - [2 Timothy 1:7](https://my.bible.com/bible/59/2TI.1.7)
 
-[Production](./Production/Production.md): Production Homelab
+[Portfolio](./Portfolio/Portfolio.md): Current Portfolio
 
 [Projects](./Projects/Projects.md): Whatever you do, work heartily, as for the Lord and not for men <br> - [Colossians 3:23](https://my.bible.com/bible/59/COL.3.23)
 - All Projects must have README
