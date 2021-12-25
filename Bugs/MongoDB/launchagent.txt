@@ -1,0 +1,3 @@
+https://rajanmaharjan.medium.com/uninstall-mongodb-macos-completely-d2a6d6c163f9
+
+storage.dbPath: /usr/local/var/mongodb
