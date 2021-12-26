@@ -3,6 +3,8 @@ This is my home lab, where I learn, understand, test and develop everything rela
 
 ## Folder Structure
 
+[Algorithms](./Algorithms/Algorithms.md): Collection of Algorithms
+
 [Bugs](./Bugs/Bugs.md): Common or tough bugs
 
 [Code Library](./Code_Library/Code_Library.md): Basic files and execution of technologies
