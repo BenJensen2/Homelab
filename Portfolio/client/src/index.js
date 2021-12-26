@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { render } from 'react-dom'
+import { render } from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
 render(
-  <BrowserRouter>
-    <React.StrictMode>
+  <React.StrictMode>
+    <BrowserRouter>
       Index
       <App />
-    </React.StrictMode>,
-  </BrowserRouter>,
+    </BrowserRouter>
+    ,
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
