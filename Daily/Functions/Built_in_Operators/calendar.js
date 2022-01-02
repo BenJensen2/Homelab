@@ -21,8 +21,10 @@ function dayArray(today, quantity) {
   let year = today.getFullYear();
   let month = today.getMonth() + 1;
   let daysInMonth = new Date(year, month, 0).getDate();
+  let i = 0
   while (i < daysInMonth){
     array.push(today.getDate() + i);
+    i++
   }
   return array;
 }
