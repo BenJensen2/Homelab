@@ -1,13 +1,10 @@
 const Controller = require("../controllers/controller");
-// const { authenticate } = require('../config/jwt.config.js');
 
 module.exports = function (app) {
-  app.get("/api/index", Controller.index);
-//   app.get("/api/user/all", UserController.getUsers);
-//   app.get("/api/user/all", authenticate, UserController.getUsers);
-//   app.post("/api/user/new", UserController.createUser);
-//   app.get("/api/user/:id", UserController.getUser);
-//   app.delete("/api/user/delete/:id", UserController.deleteUser);
-//   app.post("/api/user/login", UserController.login);
+  app.get("/api/item/all", Controller.getAllItems);
+  app.post("/api/item/new", Controller.createItem);
+  // app.get("/api/item/:id", itemController.getitem);
+//   app.delete("/api/item/delete/:id", itemController.deleteitem);
+//   app.post("/api/item/login", itemController.login);
 //   axios.get(url[,{ withCredentials: true }])
 };

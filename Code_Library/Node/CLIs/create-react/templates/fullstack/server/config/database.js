@@ -13,4 +13,4 @@ mongoose
     console.log(`Something went wrong connecting with the ${databaseName} database`, err)
   );
 
-// require("../models/User");
+require("../models/Model");
