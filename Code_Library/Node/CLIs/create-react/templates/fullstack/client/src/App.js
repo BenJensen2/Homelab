@@ -6,7 +6,6 @@ import Footer from "../../client/src/views/Footer";
 function App() {
   return (
     <div className="App">
-      App
       <Navigation />
       <MainContent />
       <Footer />

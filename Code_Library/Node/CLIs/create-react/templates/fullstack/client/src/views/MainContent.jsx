@@ -5,7 +5,6 @@ import Index from './Index'
 const MainContent = () => {
   return (
     <div className='main-content'>
-      Main Content
       <Routes>
         <Route path="/" element={<Index />}/>
       </Routes>
