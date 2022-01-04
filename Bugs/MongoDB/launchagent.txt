@@ -1,6 +1,6 @@
 brew services list
 
-Error
+### Error ###
 mongodb-community error  25600 root ~/Library/LaunchAgents/homebrew.mxcl.mongodb-community.plist
 
 launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb-community.plist
@@ -17,6 +17,12 @@ sudo chown -R user /System/Volumes/Data/data/db
 
 ### SUCCESS!!! ####
 mongo away!
+
+### Error ###
+mongodb-community error  12288 root ~/Library/LaunchAgents/homebrew.mxcl.mongodb-community.plist
+
+mongo ->> opens shell
+
 
 
 
