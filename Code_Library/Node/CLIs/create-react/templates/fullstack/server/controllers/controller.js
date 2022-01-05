@@ -10,7 +10,7 @@ module.exports = {
     res.send("Index");
   },
 
-  getOneById: (req, res) => {
+  read: (req, res) => {
     let connectedDatabase = currentDatabase.getDatabase();
     let collectionName = req.params.type + "s";
     let query = { _id: ObjectId(req.params.id) };
@@ -21,7 +21,7 @@ module.exports = {
         res.json(dbResponse);
       });
   },
-  getAllByType: (req, res) => {
+  readAll: (req, res) => {
     let connectedDatabase = currentDatabase.getDatabase();
     let collectionName = req.params.type + "s";
     connectedDatabase
@@ -54,6 +54,19 @@ module.exports = {
       .updateOne(query, updatedValues, function (err, dbResponse) {
         if (err) throw err;
         console.log("1 document updated");
+        res.json(dbResponse);
+      });
+  },
+
+  delete: (req, res) => {
+    let connectedDatabase = currentDatabase.getDatabase();
+    let collectionName = req.params.type + "s";
+    let query = { _id: ObjectId(req.params.id) };
+    connectedDatabase
+      .collection(collectionName)
+      .deleteOne(query, function (err, dbResponse) {
+        if (err) throw err;
+        console.log("1 document deleted");
         res.json(dbResponse);
       });
   },
