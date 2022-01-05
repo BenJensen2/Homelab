@@ -1,0 +1,7 @@
+.weekly{
+  text-align: left;
+}
+
+.weekly th, .weekly td {
+  padding-left: 10px;
+}
