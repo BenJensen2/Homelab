@@ -15,12 +15,12 @@ Structure
 
 ## Request Methods
 - GET: Retrieve Data
-- HEAD: Like GET with no response body
-- POST: 
-- PUT
-- DELETE
-- CONNECT
-- OPTIONS
+- HEAD: Requests only headers
+- POST: Sends data to the server
+- PUT: Creates a new resource or replaces a representation of the target resource with the request payload.
+- DELETE: Deletes specified resource
+- CONNECT: Starts two-way communications with the requested resource.
+- OPTIONS: 
 - TRACE
 - PATCH
 
