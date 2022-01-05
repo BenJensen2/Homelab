@@ -1,21 +1,27 @@
+// Require and assign installed modules
 const express = require("express");
+const app = express();
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 require("dotenv").config();
 
-const app = express();
+// Load environmental variables
 const serverPort = process.env.PORT_SERVER;
 const clientPort = process.env.PORT_CLIENT;
-const cors = require("cors");
 
+// Use within Express middleware
 app.use(cookieParser());
-// app.use(cors());
 app.use(cors({ credentials: true, origin: `http://localhost:${clientPort}` }));
-
 app.use(express.json());
 
+// Runs mongoose.connect with a Model
 database = require("./server/config/database");
+
+// Instance of Express Router
+// Requires routes function and runs it with app as input parameter
 routes = require("./server/config/routes")(app);
 
+// Listen on the server port and log to console
 app.listen(serverPort, () => {
 	console.log(`Backend running on ${serverPort}`);
 });
