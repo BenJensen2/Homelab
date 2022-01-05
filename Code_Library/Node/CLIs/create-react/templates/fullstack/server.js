@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
+const database = require("./server/config/database");
 require("dotenv").config();
 
 // Load environmental variables
@@ -14,33 +15,31 @@ app.use(cookieParser());
 app.use(cors({ credentials: true, origin: `http://localhost:${clientPort}` }));
 app.use(express.json());
 
-// Runs mongoose.connect with a Model
-database = require("./server/config/database");
-
 // Instance of Express Router
 // Requires routes function and runs it with app as input parameter
 routes = require("./server/config/routes")(app);
 
-// Listen on the server port and log to console
+// Listen on the server port, test database connection and log port to console
 app.listen(serverPort, () => {
-	console.log(`Backend running on ${serverPort}`);
+  database.connectToClient();
+  console.log(`Backend running on ${serverPort}`);
 });
 
 // Simple Test
 app.get("/server", (req, res) => {
-	res.send("Hello from the Server!");
+  res.send("Hello from the Server!");
 });
 
 // Environmental Variable Test
 app.get("/env", (req, res) => {
-	let test_secret_key = process.env.TEST_SECRET_KEY;
-	res.send(`This is the: ${test_secret_key}`);
+  let test_secret_key = process.env.TEST_SECRET_KEY;
+  res.send(`This is the: ${test_secret_key}`);
 });
 
 // Cookie Test
 // Production: Only send over HTTPS
 app.get("/cookie", (req, res) => {
-	res.cookie("my test cookie", "cookie data", { httpOnly: true }).json({
-		message: "This response has a cookie",
-	});
+  res.cookie("my test cookie", "cookie data", { httpOnly: true }).json({
+    message: "This response has a cookie",
+  });
 });

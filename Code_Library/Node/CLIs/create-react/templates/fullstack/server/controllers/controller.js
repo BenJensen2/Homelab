@@ -1,28 +1,32 @@
-const mongoose = require("mongoose");
-const Item = mongoose.model("Model");
+// Require ande assign Database
+const currentDatabase = require("../config/database");
 
 module.exports = {
-  getAllItems: (req, res) => {
-    Item.find().then((items) => {
-      console.log("looking for all models");
-      res.json(items);
-    });
+  index: (request, response) => {
+    console.log("Index");
+    response.send("Index");
   },
-
-  createItem: (req, res) => {
-    Item.create(req.body)
-      .then((item) => {
-        console.log("Creating Model", item);
-      })
-      .then(() =>{
-        console.log("Model Created")
-        res.send("Model Created!")
-      })
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
+  getAll: (request, response) => {
+    let connectedDatabase = currentDatabase.getDatabase();
+    let collectionName = request.params.type + "s";
+    console.log(collectionName)
+    connectedDatabase
+      .collection("models")
+      .find({})
+      .toArray(function (err, result) {
+        if (err) throw err;
+        response.json(result);
       });
   },
-  // Item.findByIdAndDelete
-  // Item.findById
+
+  create: (request, response) => {
+    let connectedDatabase = currentDatabase.getDatabase();
+    let collectionName = request.params.type + "s";
+    connectedDatabase
+      .collection(collectionName)
+      .insertOne(request.body, function (err, res) {
+        if (err) throw err;
+        response.json(res);
+      });
+  },
 };
