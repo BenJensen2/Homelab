@@ -1,0 +1,17 @@
+.new-item{
+  margin-bottom: 30px;
+}
+
+.new-item > form {
+  width: 200px;
+  margin:auto;
+}
+.new-item .field{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.new-item .field label{
+  text-align: left;
+}
