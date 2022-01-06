@@ -1,10 +1,13 @@
 // Require and assign installed modules
-const express = require("express");
-const app = express();
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-const database = require("./server/config/database");
+const database = require("./config/database");
 require("dotenv").config();
+
+// Require & assign express functionality
+const web = require("./express")
+const app = web.app
+const express = web.express
 
 // Load environmental variables
 const serverPort = process.env.PORT_SERVER;
@@ -17,12 +20,12 @@ app.use(express.json());
 
 // Instance of Express Router
 // Requires routes function and runs it with app as input parameter
-routes = require("./server/config/routes")(app);
+routes = require("./config/routes")(app);
 
 // Listen on the server port, test database connection and log port to console
 app.listen(serverPort, () => {
   database.connectToClient();
-  console.log(`Backend running on ${serverPort}`);
+  // console.log(`Backend running on ${serverPort}`);
 });
 
 // Simple Test
@@ -43,3 +46,6 @@ app.get("/cookie", (req, res) => {
     message: "This response has a cookie",
   });
 });
+
+// Testing Exports
+module.exports = {clientPort};

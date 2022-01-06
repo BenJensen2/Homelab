@@ -22,7 +22,7 @@ module.exports = {
         // Check to see if the connection is good
         // Assign for use in other functions
         connectedDatabase = db.db(`${databaseName}`);
-        console.log(`Connected to the ${databaseName} Database`);
+        // console.log(`Connected to the ${databaseName} Database`);
       }
       // Error handling
       if (err) {

@@ -4,7 +4,6 @@
   "description": "Personal Create React Application CLI",
   "main": "src/index.js",
   "bin": {
-    "@benjensen2/create-react": "bin/create-react",
     "create-react": "bin/create-react"
   },
   "publishConfig": {
