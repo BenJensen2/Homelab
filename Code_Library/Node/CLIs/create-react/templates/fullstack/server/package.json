@@ -4,17 +4,20 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles --coverage"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "braces": "^3.0.2",
-    "cookie-parser": "^1.4.6"
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
+    "@shelf/jest-mongodb": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "jest": "^27.4.7",
