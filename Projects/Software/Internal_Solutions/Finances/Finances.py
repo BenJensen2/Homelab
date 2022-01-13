@@ -3,6 +3,13 @@ import house
 import savings
 import investments
 
+# Inputs:
+#   - Main
+#       - Current
+#           - Age
+#           - Savings
+# This thing needs options
+
 
 def monthlySchedule(income,houseData):
     print("Monthly Schedule")
