@@ -1,0 +1,27 @@
+{
+  "name": "@benjensen2/create-react",
+  "version": "1.0.0",
+  "description": "Personal Create React Application CLI",
+  "main": "src/index.js",
+  "bin": {
+    "create-react": "bin/create-react"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "create-react"
+  ],
+  "author": "Ben Jensen",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^5.0.1",
+    "esm": "^3.2.25",
+    "inquirer": "^8.2.0",
+    "ncp": "^2.0.0"
+  }
+}
