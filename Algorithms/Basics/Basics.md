@@ -30,8 +30,10 @@ Definition: A process or set of rules to be followed in calculations or other pr
   - Constant Time Part: Any instruction that is executed just once
   - Variable Time Part: Any instruction that is executed more than once
 
+### Submodules
+- [Recursion](./Recursion.md):  The process in which a function calls itself directly or indirectly.
 
 
-#### Reverese Links
+#### Reverse Links
 - [Algorithms](../Algorithms.md)
 - [Homelab Readme](../README.md)
