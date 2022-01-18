@@ -1,5 +1,8 @@
 ### Large Files
 
+### Not needed files
+.vscode
+
 ### Clones
 Projects/Command_Line/taskwarrior/
 Tutorials/Software/FullStack/MERN/**
