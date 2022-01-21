@@ -1,0 +1,9 @@
+.form-field{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.form-field label, .form-field input{
+  display: inline-block;
+  text-align: left;
+}
