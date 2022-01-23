@@ -1,9 +1,9 @@
 public class Definition {
-  String[] list;
-  String text;
   String source;
+  String[] list;
 
-  public Definition(String... definitionsList){
+  public Definition(String definitionSource,String... definitionsList){
+    source = definitionSource;
     list = definitionsList;
   } 
 }
