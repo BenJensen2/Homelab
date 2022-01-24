@@ -73,6 +73,7 @@ public class Main {
 
     Definition kind = new Definition("websters", "of sympathetic of helpful nature", "forbearing nature",
         "arising from or characterized by sympathy of forbearance");
+        
     Definition sympathetic = new Definition("websters",
         "existing or operating through an affinity, interdependence or mutual association",
         "appropriate to one's mood, inclinations or disposition", "marked by kindly or pleased by appreciation",
