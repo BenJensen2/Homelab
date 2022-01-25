@@ -1,4 +1,7 @@
-import org.w3c.dom.Attr;
+import References.Definition;
+import References.Source;
+import People.Attribute;
+import People.Person;
 
 public class Main {
 
@@ -10,14 +13,10 @@ public class Main {
     System.out.println(message);
   }
 
-  static void defineHusband(String hisName, Attribute... hisAttributes) {
-    Husband newHusband = new Husband(hisName, hisAttributes);
-  }
-
-  static boolean checkFamilySuccess(Role.Husband theHusband) {
-    if (theHusband.attributes[0].name == "Spiritual Leader") {
+  static boolean checkFamilySuccess(Person person) {
+    if (person.attributes[0].name == "Spiritual Leader") {
       return true;
-    } else if (theHusband.attributes[0].name != "Spiritual Leader") {
+    } else if (person.attributes[0].name != "Spiritual Leader") {
       return false;
     } else
       return false;
@@ -41,7 +40,37 @@ public class Main {
     printString("and there was light");
   }
 
+  
+  static void createDefinitions(){
+    Definition beginningHebrew = new Definition();
+    
+    // beginningHebrew.source = strongsHebrew;
+    // beginning.hebrew = "רֵאשִׁית";
+  }
+  
+  static void createWords(){
+    Word beginning = new Word();
+    beginning.name = "beginning";
+    beginning.hebrewDefinition = beginningHebrew;
+    
+    createDefinitions();
+  }
+
+  // Creates all the sources used
+  static void createSources(){
+    Source strongsHebrew = new Source();
+    Source strongsGreek = new Source();
+    Source bible = new Source();
+    Source websters = new Source();
+    createWords();
+  }
+  
+  static void createReferences(){
+    createSources();
+  }
+
   public static void main(String[] args) {
+    createReferences()
 
     // God existed
     God Elohim = new God();
@@ -49,6 +78,7 @@ public class Main {
 
     // In the beginning
     creation();
+    Husband husbandRole = new Husband();
 
     // Attributes
     Attribute spiritualLeader = new Attribute("Spiritual Leader");
@@ -58,10 +88,10 @@ public class Main {
     Person ben = new Person();
     ben.firstName = "Ben";
     ben.lastName = "Jensen";
-    // ben.attributes =  new Attribute[] {spiritualLeader};
-    // Role.Husband ben = new Role.Husband("Ben", leader);
+
+    ben.attributes =  new Attribute[] {spiritualLeader};
     printString("Ben's family will succeed: ");
-    // printBoolean(checkFamilySuccess(ben));
+    printBoolean(checkFamilySuccess(ben));
 
     // Create Current Life, Society, World
     Life currentLife = new Life();

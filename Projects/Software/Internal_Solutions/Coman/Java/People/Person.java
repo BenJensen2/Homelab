@@ -1,5 +1,7 @@
-import java.security.KeyStore.Entry.Attribute;
+import Education;
+import Job;
 
+package People;
 public class Person {
   // A Person is a Human
   // Basics
