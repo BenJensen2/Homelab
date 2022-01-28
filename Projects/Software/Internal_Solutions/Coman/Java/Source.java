@@ -1,6 +1,3 @@
-package References;
-import People.Person;
-
 // Source of information
 public class Source {
   String name;

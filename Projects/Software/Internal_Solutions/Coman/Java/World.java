@@ -1,5 +1,3 @@
-import java.net.Socket;
-
 public class World {
   Life life;
   Society society;

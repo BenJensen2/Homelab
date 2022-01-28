@@ -1,8 +1,12 @@
 public class Word {
   String name;
-  Definition definition;
+  Object definition;
   String hebrew;
-  Definition hebrewDefinition;
+  Object hebrewDefinition;
   String greek;
-  Definition greekDefinition;
+  Object greekDefinition;
+
+  public Word(String theName){
+    name = theName;
+  }
 }

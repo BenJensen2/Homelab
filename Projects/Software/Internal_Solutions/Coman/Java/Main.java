@@ -1,7 +1,4 @@
-import References.Definition;
-import References.Source;
-import People.Attribute;
-import People.Person;
+import java.util.*;
 
 public class Main {
 
@@ -11,6 +8,20 @@ public class Main {
 
   static void printBoolean(boolean message) {
     System.out.println(message);
+  }
+
+  static void printObject(Object message) {
+    System.out.println(message);
+  }
+
+  static void printDefinition(Definition definition) {
+    printString(definition.name);
+    printString(definition.source.name);
+    printString(definition.original);
+    printString(definition.partOfSpeech);
+    printString(definition.transliteration);
+    printString(definition.phoneticSpelling);
+    printString(definition.definition);
   }
 
   static boolean checkFamilySuccess(Person person) {
@@ -23,8 +34,6 @@ public class Main {
   }
 
   static void creation() {
-    Word theWord = new Word(); // John 1
-
     printString("In the begining");
     printString("God created: ");
     Heaven theHeavens = new Heaven();
@@ -40,58 +49,83 @@ public class Main {
     printString("and there was light");
   }
 
-  
-  static void createDefinitions(){
-    Definition beginningHebrew = new Definition();
-    
-    // beginningHebrew.source = strongsHebrew;
-    // beginning.hebrew = "רֵאשִׁית";
-  }
-  
-  static void createWords(){
-    Word beginning = new Word();
-    beginning.name = "beginning";
-    beginning.hebrewDefinition = beginningHebrew;
-    
-    createDefinitions();
-  }
+  static Map createDefinitions() {
 
-  // Creates all the sources used
-  static void createSources(){
+    // Initialize Variables
+    Map<String, Definition> references = new HashMap<String, Definition>();
+
+    // Creates all the sources used
     Source strongsHebrew = new Source();
     Source strongsGreek = new Source();
     Source bible = new Source();
     Source websters = new Source();
-    createWords();
+
+    // Define words
+    Definition beginning = new Definition("beginning");
+    beginning.source = strongsHebrew;
+    beginning.original = "רֵאשִׁית";
+    beginning.partOfSpeech = "Noun Feminine";
+    beginning.transliteration = "reshith";
+    beginning.phoneticSpelling = "ray-sheeth'";
+    beginning.definition = "beginning, chief";
+
+    Definition logos = new Definition("logos");
+    // System.out.println(logos.getClass().getField("name"));
+    logos.source = strongsGreek;
+    logos.original = "λόγος, ου, ὁ";
+    logos.partOfSpeech = "Noun, Masculine";
+    logos.transliteration = "logos";
+
+    // Set references
+    references.put("beginning", beginning);
+    references.put("logos", logos);
+
+    return references;
   }
-  
-  static void createReferences(){
-    createSources();
+
+  static void inTheBeginning() {
+    printString("In the beginning");
+    printString("was the word");
+    printString("and the word was with God");
+    printString("and the word was God");
+    printString("He was in the begining with God");
+
   }
 
   public static void main(String[] args) {
-    createReferences()
+    Map definitions = createDefinitions();
+    // Definition logos = definitions.get("logos");
+    printObject(definitions.get("logos"));
+    // printString(definitions.get("logos").getClass().);
 
     // God existed
-    God Elohim = new God();
-    Spirit RuahElohim = new Spirit();
+    God Elohim = new God("Elohim");
+    Spirit RuahElohim = new Spirit("RuahElohim");
+    Word Logos = new Word("Logos");
+    Logos.definition = definitions.get("logos");
+    Logos.greekDefinition = definitions.get("logos");
+    // printObject(Logos.definition);
+    // printString(Logos.definition.getClass());
+    // System.out.println(Logos.definition);
+    Word Beginning = new Word("Beginning");
 
     // In the beginning
-    creation();
+    // inTheBeginning();
+    // creation();
+
     Husband husbandRole = new Husband();
 
     // Attributes
-    Attribute spiritualLeader = new Attribute("Spiritual Leader");
-    
-    
+    // Attribute spiritualLeader = new Attribute("Spiritual Leader");
+
     // Create Ben
     Person ben = new Person();
     ben.firstName = "Ben";
     ben.lastName = "Jensen";
 
-    ben.attributes =  new Attribute[] {spiritualLeader};
+    // ben.attributes = new Attribute[] {spiritualLeader};
     printString("Ben's family will succeed: ");
-    printBoolean(checkFamilySuccess(ben));
+    // printBoolean(checkFamilySuccess(ben));
 
     // Create Current Life, Society, World
     Life currentLife = new Life();
@@ -116,11 +150,12 @@ public class Main {
     stuartScott.title = "Doctor";
     stuartScott.titleAbbreviated = "Dr.";
 
-    // Role husband = 
+    // Role husband =
 
     // - Characteristics
-    // stuartScott.qualities = new String[] {"Passion","Insight","Godly Man","Committed"};
-    
+    // stuartScott.qualities = new String[] {"Passion","Insight","Godly
+    // Man","Committed"};
+
     // Roles
     // Role.Husband stuart = new Role.Husband("Stuart", stuartScott.qualities);
     stuartScott.roles = new Object[] {};
@@ -128,7 +163,6 @@ public class Main {
     // Institutions
     Institution mastersUniversity = new Institution();
     mastersUniversity.name = "The Master's University";
-
 
   }
 }
