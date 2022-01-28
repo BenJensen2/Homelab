@@ -26,6 +26,8 @@
 
 #### References
 - [Software Engineer Must Know: Data Structures](https://medium.com/@jharris.sf/software-engineering-need-to-know-data-structures-c25d49d352c4)
+- [Data Structures in Java](https://github.com/careermonk/data-structures-and-algorithms-made-easy-in-java)
+- [The Algorithms (Github)](https://github.com/TheAlgorithms/Java/blob/master/DIRECTORY.md)
 
 
 
