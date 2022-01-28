@@ -34,3 +34,6 @@ ECMAScript (ES6) standards & Quirks
 - [ES6 Specification](https://262.ecma-international.org/6.0/)
 - [Re-introduction to Javascript (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 - [You should be using ESM] (https://dev.to/bennypowers/you-should-be-using-esm-kn3)
+
+#### Links
+- [Node Require vs Import](./Require_VS_Import.md)
