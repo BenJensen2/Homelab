@@ -4,7 +4,7 @@
 - Space & Time complexity
 
 ## Data Structures
-- [] Linked List
+- [X] Linked List: Single & Doubly
 - [] Trees, Tries, & Graphs
 - [] Stacks & Queues
 - [] Heaps

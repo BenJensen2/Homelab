@@ -1,5 +1,7 @@
 # LinkedList
 List of Linked Nodes that include data and a pointer
+
+Singly Linked List
 - Node
   - constructor
     - data
@@ -13,3 +15,6 @@ List of Linked Nodes that include data and a pointer
   - addToTail
 - Head
 
+Doubly Linked List
+- Node has prev
+- List changes a little bit
