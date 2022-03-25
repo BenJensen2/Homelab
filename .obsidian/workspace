@@ -1,0 +1,91 @@
+{
+  "main": {
+    "id": "452f5dd70197aea2",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f0b68447f29fa7c",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "48b28687b85b76c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3d6d5b1fd88a999",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c98e94b66173c5db",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f59f52488a171ae9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1a3c6a066f34433d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a31f2f837e98cd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "109664fb07fac0a5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "7f0b68447f29fa7c",
+  "lastOpenFiles": [
+    "README.md",
+    "Algorithms/Algorithms.md",
+    "Untitled.md"
+  ]
+}
