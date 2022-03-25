@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <cs50.h>
 
 int main(void)
 {
-    printf("hello, worlds\n");
+    string answer = get_string("What's your name?");
+    printf("hello, world\n");
 }
 
 // clang compiles
