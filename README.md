@@ -3,8 +3,9 @@ This is my home lab, where I learn, understand, test and develop everything rela
 
 ## Folder Structure
 
-[Algorithms](./Algorithms/Algorithms.md): Collection of Algorithms
-[[Algorithm Notes]]
+[[Algorithms]]: Collection of Algorithms
+
+[[Algorithms/Algorithms]]
 
 [Bugs](./Bugs/Bugs.md): Common or tough bugs
 

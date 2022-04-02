@@ -10,4 +10,5 @@
 
 
 #### Reverse Links
-- [Homelab Readme](../README.md)
+[[HomeLab]]
+- [Homelab Readme](../README.md)[[README]]

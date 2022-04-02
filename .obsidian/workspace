@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "7f0b68447f29fa7c",
+        "id": "00620e51e343c55d",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -82,10 +82,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7f0b68447f29fa7c",
+  "active": "00620e51e343c55d",
   "lastOpenFiles": [
-    "README.md",
     "Algorithms/Algorithms.md",
+    "Reading_Library/Vision/HomeLab.md",
+    "README.md",
     "Untitled.md"
   ]
 }
