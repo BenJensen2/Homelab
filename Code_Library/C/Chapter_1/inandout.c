@@ -1,4 +1,5 @@
 #include <stdio.h>
+/* copies outputs to input*/
 
 main()
 {

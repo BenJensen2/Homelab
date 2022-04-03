@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* Counts number of characters in input */
 main()
 {
   double nc;
