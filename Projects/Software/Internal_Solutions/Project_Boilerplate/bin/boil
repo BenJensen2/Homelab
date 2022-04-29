@@ -1,5 +1,0 @@
-#!/usr/bin/env node
-//node environment path
-
-require = require('esm')(module /*, options*/); // Allows us to use import
-require('../src/cli').cli(process.argv);
